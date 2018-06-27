@@ -193,10 +193,11 @@ console.log(m);
 
 
 let div1=document.getElementById("form1");
-if(n==null||m.length>10){n="Name";m=9999999999;}
-div1.innerHTML="<iframe id='JotFormIFrame-81424896502460'  allowtransparency='true' allowfullscreen='true' allow='geolocation; microphone; camera' src='https://form.jotform.me/81424896502460?name%5Bfirst%5D="+n+"&phoneNumber%5Bphone%5D="+m+"' frameborder='0' style='width: 1px; min-width: 100%; height:539px; border:none;' scrolling='no' > </iframe> "
+if(n==null||m.length>10){n="";m="";}
+div1.innerHTML="<iframe id='JotFormIFrame-81772520139456'  allowtransparency='true' allowfullscreen='true' allow='geolocation; microphone; camera' src='https://form.jotform.me/81772520139456?name28%5Bfirst%5D="+n+"&phoneNumber%5Bphone%5D="+m+"' frameborder='0' style='width: 1px; min-width: 100%; height:539px; border:none;' scrolling='no' > </iframe> "
 </script>
-<script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-81424896502460"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
+<script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-81772520139456"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
+
 
 </section>
 
@@ -219,10 +220,10 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item1.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item1.png"><i class="icon-eye-open"></i></a>
+
                                 </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item joomla bootstrap">
@@ -230,10 +231,10 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item2.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item2.png"><i class="icon-eye-open"></i></a>
+
                                 </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item bootstrap wordpress">
@@ -241,10 +242,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item3.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item3.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                  </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item joomla wordpress apps">
@@ -252,10 +252,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item4.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item4.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                  </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item joomla html">
@@ -263,10 +262,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item5.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item5.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                  </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -274,10 +272,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item6.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item6.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                  </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item joomla html">
@@ -285,10 +282,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item7.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item6.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                  </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -296,10 +292,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item8.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item8.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                    </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -307,10 +302,10 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item9.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item9.png"><i class="icon-eye-open"></i></a>
+                            <!--        <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item9.png"><i class="icon-eye-open"></i></a> -->
                                 </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -318,10 +313,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item10.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item10.png"><i class="icon-eye-open"></i></a>
-                                </div>
+                                    </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -329,10 +323,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item11.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item11.png"><i class="icon-eye-open"></i></a>
                                 </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                     <li class="portfolio-item wordpress html">
@@ -340,10 +333,9 @@ Get started for free, and make your venue the hottest place to be!</p>
                             <div class="portfolio-image">
                                 <img src="images/portfolio/thumb/item12.png" alt="">
                                 <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/thumb/item12.png"><i class="icon-eye-open"></i></a>
                                 </div>
                             </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
+
                         </div>
                     </li><!--/.portfolio-item-->
                 </ul>
@@ -446,10 +438,11 @@ Get started for free, and make your venue the hottest place to be!</p>
         </div>
     </section>
   -->
+
 <section id="book">
   <div class="container">
     <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/appointcal/30min" style="min-width:320px;height:580px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/starclinch/starclinch" style="min-width:320px;height:580px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 <!-- Calendly inline widget end -->
   </div>
