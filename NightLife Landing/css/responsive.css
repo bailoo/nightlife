@@ -51,6 +51,8 @@
   display: inherit !important;
 }
 @media (min-width: 768px) and (max-width: 979px) {
+  div.row.i-am-centered { margin: auto; max-width: 600px;}
+  div.row.i-am-really-centered { margin: auto; max-width: 400px;}
   .hidden-desktop {
     display: inherit !important;
   }
@@ -83,6 +85,10 @@
     margin-left: -30px;
     *zoom: 1;
   }
+  div.row.i-am-centered { margin: auto; max-width: 600px;}
+
+  div.row.i-am-really-centered { margin: auto; max-width: 400px;}
+
   .row:before,
   .row:after {
     display: table;
@@ -401,6 +407,8 @@
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
+  div.row.i-am-centered { margin: auto; max-width: 600px;}
+  div.row.i-am-really-centered { margin: auto; max-width: 400px;}
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -714,6 +722,8 @@
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
+  div.row.i-am-centered { margin: auto; max-width: 600px;}
+  div.row.i-am-really-centered { margin: auto; max-width: 400px;}
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -804,6 +814,7 @@
   }
 }
 @media (min-width: 350px) and (max-width: 480px) {
+
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

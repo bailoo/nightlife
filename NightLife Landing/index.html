@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -188,11 +189,11 @@ let n=url.substr(url.indexOf("?")+6,url.indexOf("&")-url.indexOf("=")-1);
 console.log(n);
 
 let m=url.substring(url.indexOf("&")+5);
-
+console.log(m);
 
 
 let div1=document.getElementById("form1");
-if(n==null&&m==null){n="Name";m=9999999999;}
+if(n==null||m.length>10){n="Name";m=9999999999;}
 div1.innerHTML="<iframe id='JotFormIFrame-81424896502460'  allowtransparency='true' allowfullscreen='true' allow='geolocation; microphone; camera' src='https://form.jotform.me/81424896502460?name%5Bfirst%5D="+n+"&phoneNumber%5Bphone%5D="+m+"' frameborder='0' style='width: 1px; min-width: 100%; height:539px; border:none;' scrolling='no' > </iframe> "
 </script>
 <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-81424896502460"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
@@ -457,39 +458,18 @@ Get started for free, and make your venue the hottest place to be!</p>
         <div class="container">
             <div class="box last">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h1>Contact Form</h1>
-                        <p>Just fill in the details and we'll get back to you</p>
-                        <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email address">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="center">
+
+
+                                        <button type="submit" class="btn btn-danger btn-lg" onclick="goback()">Book an Appointment</button>
+
+
                     </div><!--/.col-sm-6-->
-                    <div class="col-sm-6 padleft">
+
+                    <div class="center">
                         <h1>Our Address</h1>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="center">
                                 <address>
                                     <strong>Starclinch</strong><br>
                                     Percept House<br>
@@ -500,19 +480,17 @@ Get started for free, and make your venue the hottest place to be!</p>
                             </div>
                         </div>
                         <h1>Connect with us</h1>
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row i-am-centered">
+                            <div class="i-am-really-centered">
                                 <ul class="social">
-                                    <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
-                                    <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
-                                    <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="social">
-                                    <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                                    <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                                    <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
+                                    <li class="col-sm-3"><a href="#"><i class="icon-facebook icon-social"></i> </a></li>
+                                  <!--  <li class="col-sm-2"><a href="#"><i class="icon-google-plus icon-social"></i> </a></li> -->
+                                  <!--  <li class="col-sm-2"><a href="#"><i class="icon-pinterest icon-social"></i></a></li> -->
+
+
+                                    <li class="col-sm-3"><a href="#"><i class="icon-linkedin icon-social"></i></a></li>
+                                    <li class="col-sm-3"><a href="#"><i class="icon-twitter icon-social"></i></a></li>
+                                    <li class="col-sm-3"><a href="#"><i class="icon-youtube icon-social"></i> </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -544,13 +522,19 @@ Get started for free, and make your venue the hottest place to be!</p>
   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="js/jquery.cookie.js"></script>
   <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
-<script>
-var url = window.location.href.toString();
+  <script type="text/javascript"> function goback(){
+    document.getElementById("form1").scrollIntoView();
+  }</script>
+  <script>
+  function formscroll(){
+  var url = window.location.href.toString();
 
-let check=url.substr(url.indexOf("#")+1,4);
-console.log(check);
-if(check=="form")
-document.getElementById("form1").scrollIntoView();
-</script>
+  let check=url.substr(url.indexOf("#")+1,4);
+  console.log(check);
+  if(check=="form")
+  document.getElementById("form1").scrollIntoView();
+  }
+  formscroll();
+  </script>
 </body>
 </html>
