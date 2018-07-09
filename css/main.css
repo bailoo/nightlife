@@ -719,7 +719,7 @@ section.background-gray-lightest {
     margin: 2% auto; /* 15% from the top and centered */
     padding: 2px 5px;
     border: 1px solid #888;
-    width: 60%;
+    width: 70%;
     height: auto;
     /* Could be more or less, depending on screen size */
 }
@@ -757,4 +757,18 @@ input[type=number]::-webkit-outer-spin-button {
   width:100%;
   padding-bottom: 6.5%;
   margin: auto;
+}
+.responsiveCal {
+
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+
+}
+
+.responsiveCal iframe {
+
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+
+}
+.responsiveForm iframe{
+  height:750px;
 }
