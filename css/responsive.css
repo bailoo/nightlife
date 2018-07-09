@@ -10,6 +10,11 @@
 .clearfix {
   *zoom: 1;
 }
+.ytvid{
+  width: 1024px; /* you have to have a size or this method doesn't work */
+    height:576px ;
+  margin: auto;
+}
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -56,6 +61,22 @@
   .hidden-desktop {
     display: inherit !important;
   }
+  .ytvid{
+    width: 736px; /* you have to have a size or this method doesn't work */
+    height:414px ;
+  }
+  #main-slider .container{
+    height: 250px;
+  }
+  #cat12,#cat11,#cat10{
+    display: none;
+
+  }
+  #list-social li {
+
+     padding-left: 2px;
+     padding-right: 2px;
+  }
   .visible-desktop {
     display: none !important ;
   }
@@ -67,6 +88,10 @@
   }
 }
 @media (max-width: 767px) {
+  #main-slider h1{
+    font-size: 300%;
+  }
+
   .hidden-desktop {
     display: inherit !important;
   }
@@ -81,9 +106,22 @@
   }
 }
 @media (min-width: 1300px) {
+  .nav.navbar-nav{
+    position: relative;
+    left: 220px;
+
+  }
   .row {
     margin-left: -30px;
     *zoom: 1;
+  }
+  #main-slider .container{
+    height: 250px;
+  }
+  #list-social li {
+
+     padding-left: 3px;
+     padding-right: 3px;
   }
   div.row.i-am-centered { margin: auto; max-width: 600px;}
 
@@ -413,6 +451,11 @@
     margin-left: -20px;
     *zoom: 1;
   }
+  #list-social li {
+
+     padding-left: 3px;
+     padding-right: 3px;
+  }
   .row:before,
   .row:after {
     display: table;
@@ -728,6 +771,22 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .ytvid{
+    width: 464px; /* you have to have a size or this method doesn't work */
+    height:261px ;
+  }
+  #aircal{
+    max-width:95%;
+    height: 60%;
+  }
+  #aircal iframe{
+    height: 500px;
+  }
+  #list-social li {
+
+     padding-left: 2px;
+     padding-right: 2px;
+  }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
   .navbar-static-top {
@@ -813,8 +872,135 @@
     top: auto;
   }
 }
-@media (min-width: 350px) and (max-width: 480px) {
+@media (min-width: 412px) and (max-width: 480px){
+  #cat12,#cat11,#cat10,#cat9,#cat8,#cat7,#cat6,#cat5{
+    display: none;
 
+  }
+  .ytvid{
+    width: 400px; /* you have to have a size or this method doesn't work */
+    height:225px ;
+  }
+  .box.first {
+    margin-top: -140px;
+
+  }
+#cat1,#cat2,#cat3,#cat4{
+  transform: scale(0.9);
+  padding-left: 1px;
+  padding-right: 1px;
+}
+#categ li{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+#categ{
+  max-width: 100%;
+  margin:auto;
+}
+.box.first{
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#aircal{
+  max-width: 98%;
+
+}
+#aircal iframe{
+  height: 400px;
+}
+.nav-collapse {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.page-header h1 small {
+  display: block;
+  line-height: 20px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  border: 1px solid #ccc;
+}
+.form-horizontal .control-label {
+  float: none;
+  width: auto;
+  padding-top: 0;
+  text-align: left;
+}
+.form-horizontal .controls {
+  margin-left: 0;
+}
+.form-horizontal .control-list {
+  padding-top: 0;
+}
+.form-horizontal .form-actions {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+.modal-header .close {
+  padding: 10px;
+  margin: -10px;
+}
+.carousel-caption {
+  position: static;
+}
+}
+@media (min-width: 351px) and (max-width: 412px) {
+
+  #cat12,#cat11,#cat10,#cat9,#cat8,#cat7,#cat6,#cat5{
+    display: none;
+
+  }
+  .ytvid{
+    width: 320px; /* you have to have a size or this method doesn't work */
+    height:180px ;
+  }
+  .box.first {
+    margin-top: -150px;
+
+  }
+  #cat1,#cat2,#cat3,#cat4{
+    transform: scale(1);
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  #categ li{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .empty-li{
+    display: none;
+  }
+  #categ{
+    max-width: 78%;
+    margin: auto;
+  }
+
+  .box.first{
+    padding: 15px 10px 5px 10px;
+  }
+
+  #aircal{
+    max-width: 98%;
+
+  }
+  #aircal iframe{
+    height: 400px;
+  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -857,6 +1043,47 @@
   }
 }
 @media (max-width: 350px) {
+  #cat12,#cat11,#cat10,#cat9,#cat8,#cat7,#cat6,#cat5{
+    display: none;
+
+  }
+  .ytvid{
+    width:304px;
+    height:171px;
+  }
+  .box.first {
+    margin-top: -170px;
+
+  }
+  #cat1,#cat2,#cat3,#cat4{
+    transform: scale(1);
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  #categ li{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  #categ{
+    max-width: 80%;
+    margin: auto;
+  }
+  .box.first{
+    padding-bottom: 5px;
+  }
+  #categ ul{
+    margin-bottom: 0px;
+  }
+  #aircal{
+    max-width: 100%;
+
+  }
+  #aircal iframe{
+    height: 300px;
+  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -1046,6 +1273,21 @@
     padding-right: 10px;
   }
 }
+@media (min-width:992px) and (max-width:1199px){
+  .nav.navbar-nav{
+    position: relative;
+    left: 60px;
+
+  }
+}
+@media (min-width:1200px) and (max-width:1299px){
+  .nav.navbar-nav{
+    position: relative;
+    left: 220px;
+
+  }
+}
+
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;

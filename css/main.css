@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 body {
   background: #e5e5e5;
   color: #999;
@@ -19,6 +19,11 @@ a {
   -o-transition: 300ms;
   transition: 300ms;
 }
+
+#main-slider a{
+  color: #FFF;
+}
+
 .btn {
   font-weight: 300;
   border: 0;
@@ -45,7 +50,7 @@ a:focus {
   left: 0;
   width: 100%;
   height: 80px;
-  z-index: 99999;
+  z-index: 999;
 }
 #main-slider {
   background-image: url(../images/Slider_bg1.jpg);
@@ -160,7 +165,7 @@ a:focus {
   position: relative;
 }
 .box.first {
-  margin-top: -50px;
+  margin-top: -100px;
   padding-top: 15px;
   border-radius: 5px 5px 0 0;
 }
@@ -461,6 +466,7 @@ transform: scale(1.2);
   background-size: 100% auto;
   background-position: center;
 }
+
 .bg-content {
   background: url(../images/bg-content.jpg) 50% 50%;
 }
@@ -620,4 +626,135 @@ textarea#message {
     opacity: 1;
     -o-transform: scale(1);
   }
+}
+#list-social ul {
+   padding: 0px;
+   padding-top: 5px;
+}
+#list-social li {
+   display: inline-block;
+   width: auto;
+   list-style: outside none none;
+   padding-left: 1px;
+   padding-right: 1px;
+}
+#categ ul {
+   padding: 0px;
+   padding-top: 5px;
+}
+#categ li {
+   display: inline-block;
+   width: auto;
+   list-style: outside none none;
+   padding-left: 2px;
+   padding-right: 2px;
+   margin-left: 1px;
+   margin-right: 1px;
+
+}
+#categ p{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+.i-am-centered-cat{
+  display: flex;
+  flex-wrap:wrap;
+
+  max-width: 96%;
+  margin: auto;
+}
+#aircal{
+  max-width: 70%;
+
+  margin: auto;
+}
+//clients style
+section.background-gray-lightest {
+  background: #f7f7f7;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+.padding--small {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.customer {
+  text-align: center;
+}
+.customer img {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.customer img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.img-responsive {
+  margin: 0 auto;
+}
+/* The Modal (background) */
+.modal1 {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 2% auto; /* 15% from the top and centered */
+    padding: 2px 5px;
+    border: 1px solid #888;
+    width: 60%;
+    height: auto;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#form1{
+padding: 0px;
+}
+li{
+  list-style: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-label-left, .form-label-auto {
+    width: 100% !important;
+  }
+
+#cid_184{
+  width:100%;
+  padding-bottom: 6.5%;
+  margin: auto;
 }
